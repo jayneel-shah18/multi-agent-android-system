@@ -1,0 +1,235 @@
+{
+  "goal": "Test turning Wi-Fi on and off",
+  "start_time": "2025-07-27T08:53:59.212243",
+  "end_time": "2025-07-27T08:53:59.887743",
+  "duration_seconds": 0.675,
+  "steps": [
+    {
+      "step_index": 1,
+      "step": "open settings",
+      "step_type": "execution",
+      "start_time": "2025-07-27T08:53:59.221470",
+      "end_time": "2025-07-27T08:53:59.333693",
+      "duration_seconds": 0.112,
+      "planner_info": null,
+      "executor_info": {
+        "timestamp": "2025-07-27T08:53:59.228983",
+        "action": {
+          "action_type": 1,
+          "touch_position": [
+            0.18518518518518517,
+            0.125
+          ]
+        },
+        "element_info": null,
+        "success": true,
+        "error": null
+      },
+      "verifier_info": {
+        "timestamp": "2025-07-27T08:53:59.333060",
+        "verification_status": "pass",
+        "confidence": 0.9,
+        "reason": "Successfully navigated to settings",
+        "details": {
+          "target_screen": "settings",
+          "actual_screen": "settings"
+        }
+      },
+      "status": "completed_success"
+    },
+    {
+      "step_index": 2,
+      "step": "tap wifi",
+      "step_type": "execution",
+      "start_time": "2025-07-27T08:53:59.334294",
+      "end_time": "2025-07-27T08:53:59.446006",
+      "duration_seconds": 0.112,
+      "planner_info": null,
+      "executor_info": {
+        "timestamp": "2025-07-27T08:53:59.340281",
+        "action": {
+          "action_type": 1,
+          "touch_position": [
+            0.1388888888888889,
+            0.1171875
+          ]
+        },
+        "element_info": null,
+        "success": true,
+        "error": null
+      },
+      "verifier_info": {
+        "timestamp": "2025-07-27T08:53:59.445214",
+        "verification_status": "pass",
+        "confidence": 0.8,
+        "reason": "Tap resulted in screen change: settings -> wifi",
+        "details": {
+          "screen_transition": "settings -> wifi"
+        }
+      },
+      "status": "completed_success"
+    },
+    {
+      "step_index": 3,
+      "step": "toggle wifi off",
+      "step_type": "execution",
+      "start_time": "2025-07-27T08:53:59.446300",
+      "end_time": "2025-07-27T08:53:59.556193",
+      "duration_seconds": 0.11,
+      "planner_info": null,
+      "executor_info": {
+        "timestamp": "2025-07-27T08:53:59.451021",
+        "action": {
+          "action_type": 1,
+          "touch_position": [
+            0.20833333333333334,
+            0.15625
+          ]
+        },
+        "element_info": null,
+        "success": true,
+        "error": null
+      },
+      "verifier_info": {
+        "timestamp": "2025-07-27T08:53:59.555337",
+        "verification_status": "pass",
+        "confidence": 0.7,
+        "reason": "Basic sanity check passed - UI structure appears valid",
+        "details": {
+          "elements_found": 4,
+          "screen": "wifi",
+          "step": "toggle wifi off",
+          "action_type": "toggle"
+        }
+      },
+      "status": "completed_success"
+    },
+    {
+      "step_index": 4,
+      "step": "wait 2 seconds",
+      "step_type": "execution",
+      "start_time": "2025-07-27T08:53:59.556652",
+      "end_time": "2025-07-27T08:53:59.667865",
+      "duration_seconds": 0.111,
+      "planner_info": null,
+      "executor_info": {
+        "timestamp": "2025-07-27T08:53:59.563904",
+        "action": {
+          "action_type": 0,
+          "touch_position": [
+            0.0,
+            0.0
+          ]
+        },
+        "element_info": null,
+        "success": true,
+        "error": null
+      },
+      "verifier_info": {
+        "timestamp": "2025-07-27T08:53:59.667123",
+        "verification_status": "pass",
+        "confidence": 0.8,
+        "reason": "Observation completed - screen state unchanged as expected",
+        "details": {
+          "screen": "wifi"
+        }
+      },
+      "status": "completed_success"
+    },
+    {
+      "step_index": 5,
+      "step": "toggle wifi on",
+      "step_type": "execution",
+      "start_time": "2025-07-27T08:53:59.668240",
+      "end_time": "2025-07-27T08:53:59.778489",
+      "duration_seconds": 0.11,
+      "planner_info": null,
+      "executor_info": {
+        "timestamp": "2025-07-27T08:53:59.672362",
+        "action": {
+          "action_type": 1,
+          "touch_position": [
+            0.20833333333333334,
+            0.15625
+          ]
+        },
+        "element_info": null,
+        "success": true,
+        "error": null
+      },
+      "verifier_info": {
+        "timestamp": "2025-07-27T08:53:59.777612",
+        "verification_status": "pass",
+        "confidence": 0.7,
+        "reason": "Basic sanity check passed - UI structure appears valid",
+        "details": {
+          "elements_found": 4,
+          "screen": "wifi",
+          "step": "toggle wifi on",
+          "action_type": "toggle"
+        }
+      },
+      "status": "completed_success"
+    },
+    {
+      "step_index": 6,
+      "step": "go back",
+      "step_type": "execution",
+      "start_time": "2025-07-27T08:53:59.778851",
+      "end_time": "2025-07-27T08:53:59.887277",
+      "duration_seconds": 0.108,
+      "planner_info": null,
+      "executor_info": {
+        "timestamp": "2025-07-27T08:53:59.783027",
+        "action": {
+          "action_type": 1,
+          "touch_position": [
+            0.041666666666666664,
+            0.0390625
+          ]
+        },
+        "element_info": null,
+        "success": true,
+        "error": null
+      },
+      "verifier_info": {
+        "timestamp": "2025-07-27T08:53:59.886486",
+        "verification_status": "pass",
+        "confidence": 0.9,
+        "reason": "Back navigation successful: wifi -> settings",
+        "details": {
+          "back_transition": "wifi -> settings"
+        }
+      },
+      "status": "completed_success"
+    }
+  ],
+  "replans": [],
+  "final_status": "success",
+  "statistics": {
+    "total_steps": 6,
+    "successful_steps": 6,
+    "failed_steps": 0,
+    "verification_passes": 6,
+    "verification_failures": 0,
+    "bugs_detected": 0,
+    "replanning_events": 0,
+    "goals_processed": 1,
+    "plans_generated": 1,
+    "replans_generated": 0,
+    "steps_executed": 6,
+    "actions_performed": 6,
+    "successful_executions": 6,
+    "failed_executions": 0,
+    "verifications_performed": 6,
+    "start_time": "2025-07-27T08:53:59.199507",
+    "runtime_seconds": 0.68822,
+    "success_rate": 100.0,
+    "verification_rate": 100.0,
+    "replanning_rate": 0.0
+  },
+  "metadata": {
+    "logger_version": "1.0",
+    "created_by": "AndroidAutomationPipeline"
+  }
+}
