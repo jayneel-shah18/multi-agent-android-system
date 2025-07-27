@@ -120,7 +120,10 @@ qualgent-task/
 ├── tests/                      # Test suites and validation
 │   ├── test_simple_multi_agent.py
 │   ├── test_submission_readiness.py
-│   └── test_focused_enhancements.py
+│   ├── test_multi_agent_integration.py
+│   ├── test_android_world.py    # AndroidWorld integration tests
+│   ├── test_env.py             # Environment validation tests
+│   └── validate_system.py     # System validation script
 ├── logs/                       # Execution logs and outputs
 │   ├── qa_run_<timestamp>.json
 │   └── <agent>_<timestamp>.log
@@ -286,21 +289,34 @@ python -m pytest tests/ -v
 # Run specific test categories
 python tests/test_simple_multi_agent.py        # Basic functionality
 python tests/test_submission_readiness.py      # Production readiness
-python tests/test_focused_enhancements.py      # Recent enhancements
+python tests/test_multi_agent_integration.py   # Full integration tests
+python tests/test_android_world.py             # AndroidWorld compatibility
+python tests/test_env.py                       # Environment validation
+python validate_system.py                      # System validation
 
 # Test individual components
 python agents/planner_agent.py    # Test planning system
 python agents/executor_agent.py   # Test execution with enhanced matching
 python agents/verifier_agent.py   # Test granular verification
 python agents/supervisor_agent.py # Test strategic analysis
+
+# Environment compatibility tests
+python tests/test_android_world.py # Test AndroidWorld integration
+python tests/test_env.py          # Test android_env compatibility
 ```
+
+### Additional Test Scripts
+
+- **test_android_world.py**: Validates compatibility with AndroidWorld environment setup
+- **test_env.py**: Tests android_env integration and configuration validation
+- **validate_system.py**: Comprehensive system integrity checker (located in root directory)
 
 ### Validation Results
 **Enhanced Features Validation:**
 - Number matching: 85.7% success rate (6/7 test cases)
 - Granular verification: 80% accuracy (4/5 verification types)
 - Structured logging: 100% coverage (all steps logged)
-- Visual tracing: Screenshot capture working
+- Visual tracing: Framework prepared for screenshot integration
 - Fallback strategies: 100% graceful degradation
 
 **Overall System Validation:**
@@ -316,7 +332,7 @@ python agents/supervisor_agent.py # Test strategic analysis
 1. **UI Environment Dependency**: Testing limited by mock environment constraints
    - **Solution**: Enhanced MockEnv with realistic UI element simulation
    
-2. **Visual Processing**: Limited screenshot analysis capabilities  
+2. **Visual Processing**: Screenshot capture framework in place, analysis pending
    - **Solution**: Framework ready for visual tracing integration
    
 3. **Network Dependencies**: Some goals require network access not available in test environment
@@ -349,7 +365,7 @@ In the short term, the system will be enhanced with real device integration and 
 - **Enhanced Number Matching**: 85.7% success rate for "tap number X" patterns
 - **Granular Verification**: 80% accuracy with 5 verification status types
 - **Structured Logging**: Complete audit trails with timestamped JSON output
-- **Visual Tracing**: Framework ready for screenshot capture
+- **Visual Tracing**: Framework prepared with screenshot capture hooks
 - **Fallback Strategies**: 3-tier approach for robust execution
 - **Overall Enhancement Success**: 82.9% improvement rate
 

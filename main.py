@@ -28,7 +28,7 @@ Output Files:
 - logs/frame_<step>.png - Screenshot captures (when available)
 - logs/<agent>_<timestamp>.log - Individual agent logs
 
-Author: Multi-Agent System Team
+Author: Jayneel Shah
 Version: 1.0
 """
 
