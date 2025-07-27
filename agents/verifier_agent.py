@@ -15,6 +15,9 @@ Key Features:
 - Screen transition validation
 - Heuristic-based and pattern-based verification
 - Extensible for LLM-based reasoning
+
+Author: Jayneel Shah
+Version: 1.0
 """
 
 import logging

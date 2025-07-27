@@ -15,7 +15,7 @@ Key Features:
 - Comprehensive logging and error handling
 - Debug mode for detailed execution analysis
 
-Author: Multi-Agent System Team
+Author: Jayneel Shah
 Version: 1.0
 """
 

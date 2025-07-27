@@ -14,6 +14,9 @@ Key Features:
 - Edge case and flow recommendations
 - Performance metrics analysis
 - Automated report generation
+
+Author: Jayneel Shah
+Version: 1.0
 """
 
 import logging

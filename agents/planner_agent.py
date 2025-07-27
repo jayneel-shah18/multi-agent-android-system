@@ -13,7 +13,7 @@ Key Features:
 - Comprehensive logging and metrics tracking
 - Extensible architecture for future LLM integration
 
-Author: Multi-Agent System Team
+Author: Jayneel Shah
 Version: 1.0
 """
 
