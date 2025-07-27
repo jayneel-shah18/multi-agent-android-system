@@ -70,8 +70,7 @@ The system consists of 4 specialized agents working together in a coordinated pi
 
 ### Step 1: Clone the Repository
 ```bash
-git clone <repository-url>
-cd qualgent-task
+git clone https://github.com/jayneel-shah18/multi-agent-android-system
 ```
 
 ### Step 2: Create Virtual Environment
